@@ -1,0 +1,13 @@
+.nav {
+  margin-top: 2rem;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  font-size: 25px;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: 800;
+}
