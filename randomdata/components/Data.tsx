@@ -25,6 +25,10 @@ function Data() {
     setCount((prev) => prev + 1);
   }, [user]);
 
+  useEffect(() => {
+    setCount(0);
+  }, []);
+
   return !user ? (
     <>
       <div className={classes.count}>{"Number of Generations: " + count}</div>
