@@ -2,7 +2,7 @@ import classes from "./data.module.css";
 import { useState } from "react";
 
 function Data() {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState<any>("");
 
   async function generateData() {
     const data = await fetch(
@@ -26,7 +26,14 @@ function Data() {
       </button>
     </section>
   ) : (
-    <div>hi</div>
+    <section>
+      <img src={user.avatar} width={200} height={200} alt="avatar" />
+      <div>{user.first_name + " " + user.last_name}</div>
+      <div>{user.email}</div>
+      <button className={classes.button} onClick={generateData}>
+        Generate Data
+      </button>
+    </section>
   );
 }
 
