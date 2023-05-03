@@ -26,10 +26,18 @@ function Data() {
       </button>
     </section>
   ) : (
-    <section>
-      <img src={user.avatar} width={200} height={200} alt="avatar" />
-      <div>{user.first_name + " " + user.last_name}</div>
-      <div>{user.email}</div>
+    <section className={classes.section2}>
+      <img
+        src={user.avatar}
+        width={200}
+        height={200}
+        alt="avatar"
+        className={classes.image}
+      />
+      <div className={classes.text}>
+        {"Name: " + user.first_name + " " + user.last_name}
+      </div>
+      <div className={classes.text}>{"Email: " + user.email}</div>
       <button className={classes.button} onClick={generateData}>
         Generate Data
       </button>
