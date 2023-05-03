@@ -17,7 +17,7 @@
 
 .section2 {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,4 +38,13 @@
 .text {
   font-size: 30px;
   letter-spacing: 0.2rem;
+}
+
+.count {
+  width: 100vw;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: #9a72ae;
 }
